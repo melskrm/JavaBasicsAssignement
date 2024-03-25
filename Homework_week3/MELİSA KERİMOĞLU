@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        int x;
+        System.out.println("lutfen bir sayi girin");
+        Scanner input= new Scanner(System.in);
+        x = input.nextInt();
+        if(x%2==0)
+
+            System.out.println("GİRDİGİNİZ SAYİ ÇİFTTİR.");
+        else
+            System.out.println("GİRDİGİNİZ SAYİ TEKTİR");
+
+    }
+
+}
+2211502008 MELİSA KERİMOĞLU
