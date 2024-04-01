@@ -1,0 +1,28 @@
+1.dosya
+public class MyClass {
+    public String isim="melisa";
+    public String soyisim="kerimoglu";
+    public int yas=21;
+    public String sac_rengi="kahverengi";
+    public double boy=1.60;
+    public boolean biyik=false;
+
+
+
+}
+
+
+2.dosya
+public class MyClassDrive {
+    public static void main(String[] args) {
+        MyClass cevap= new MyClass();
+        System.out.println(cevap.isim);
+        System.out.println(cevap.soyisim);
+        System.out.println(cevap.yas);
+        System.out.println(cevap.boy);
+        System.out.println(cevap.sac_rengi);
+        System.out.println(cevap.biyik);
+
+    }
+}
+
