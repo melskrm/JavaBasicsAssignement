@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ArmstrongSayi {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir sayı girin: ");
+        int sayi = scanner.nextInt();
+
+        if (isArmstrong(sayi))
+            System.out.println(sayi + " bir Armstrong sayısıdır.");
+        else
+            System.out.println(sayi + " bir Armstrong sayısı değildir.");
+
+    }
+
+    public static boolean isArmstrong(int sayi) {
+        int OrijinalSayi, kalan, sonuc = 0, n = 0;
+
+        OrijinalSayi = sayi;
+
+        for (OrijinalSayi = sayi; OrijinalSayi != 0; OrijinalSayi /= 10, ++n);
+
+        OrijinalSayi = sayi;
+
+
+        while (OrijinalSayi != 0) {
+            kalan = OrijinalSayi % 10;
+            sonuc += Math.pow(kalan, n);
+            OrijinalSayi /= 10;
+        }
+
+
+        if (sonuc == sayi)
+            return true;
+        else
+            return false;
+    }
+}
