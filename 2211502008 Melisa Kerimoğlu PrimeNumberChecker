@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class ÇarpımTablosu {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayi girin ");
+        int sayi = scanner.nextInt();
+
+        boolean NormalSayiMi = true;
+        if (sayi <= 1)
+            NormalSayiMi = false;
+        else {
+            for (int i = 2; i <= Math.sqrt(sayi); i++) {
+                if (sayi % i == 0) {
+                    NormalSayiMi = false;
+                    break;
+                }
+            }
+        }
+
+        if (NormalSayiMi)
+            System.out.println(sayi + " bir asal sayıdır.");
+        else
+            System.out.println(sayi + " bir bileşik sayıdır.");
+    }
+}
+
