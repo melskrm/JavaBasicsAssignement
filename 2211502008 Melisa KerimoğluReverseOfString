@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class DiziyiTerstenYazma {
+    Scanner oku = new Scanner(System.in);
+    System.out.println("veri giriniz: ");
+    String metin= oku.nextLine();
+    String ters = " ";
+    for( int i= metin.length() - 1; i>=0; i--){
+        ters= ters+ metin.charAt(i);
+    }
+    System.out.println("girdiğiniz metnin tersi:\n"+ters);
+}
