@@ -1,0 +1,44 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import  java.util.Scanner;
+
+public class İslemJava {
+//İKİ DOSYADAN OLUŞAN BİR JAVA PROGTAMI ÖRENĞİ
+
+    //METOT YAZACAZ
+    public void Operations(){
+        Scanner sayilar= new Scanner(System.in);
+
+        try {
+            System.out.println("islem seç");
+            System.out.println("1. toplama");
+            System.out.println("2. çıkarma");
+            System.out.println("3. çarpma");
+            System.out.println("4. bölme");
+
+            int secenek= sayilar.nextInt();
+            System.out.println("1. sayiyi gir");
+            int num1= sayilar.nextInt();
+
+            System.out.println("2. sayiyi gir");
+            int num2= sayilar.nextInt();
+            double sonuc=0;
+
+
+
+        }
+        catch(Exception hata){
+            System.out.println("hata oluştu");
+        }
+
+    }
+    
+
+}
+public class MAİN{
+public static void main(String[] args) {
+    İslemJava hesapMak= new İslemJava();
+    hesapMak.Operations();
+}
+
+}
